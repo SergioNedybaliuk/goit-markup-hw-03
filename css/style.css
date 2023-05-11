@@ -6,6 +6,7 @@
   --filter-first-color: #e7e9fc;
   --filter-bg-color: #f4f4fd;
   --filter-color: #404bbf;
+  --cornflower-bg: #e7e9fc;
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -129,6 +130,19 @@ body {
   letter-spacing: 0.02em;
   color: var(--secondary-color-tittle);
 }
+.sec-h-two {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--primary-color-tittle);
+}
+.sec-p-two {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--secondary-color-tittle);
+}
 /* section 3 */
 .sec-three {
   font-size: 36px;
@@ -237,10 +251,10 @@ body {
   margin: 0;
   padding: 0;
 }
-.cars-features {
+.cards-features {
   flex-basis: calc(100 / 4);
 }
-.cars-features:not(:last-child) {
+.cards-features:not(:last-child) {
   margin-right: 24px;
 }
 .section {
@@ -266,4 +280,31 @@ body {
 }
 .team-li:not(:last-child) {
   margin-right: 24px;
+}
+.buttons {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  margin-bottom: 72px;
+}
+.buttons-li:not(:last-child) {
+  margin-right: 24px;
+}
+
+.portfolio-cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+}
+.cards-li:nth-child(3n + 3) {
+  margin-right: 0;
+}
+.cards-li {
+  margin-right: 24px;
+  margin-bottom: 48px;
+  background-color: var(--cornflower-bg);
+  border: 1px solid #e7e9fc;
 }

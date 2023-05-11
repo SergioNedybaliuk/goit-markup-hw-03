@@ -20,67 +20,73 @@
 
   <body>
     <!-- шапка проекту -->
-    <div class="container">
-      <header>
-        <nav>
+    <header>
+      <div class="container adress-nav">
+        <nav class="navigations">
           <a href="./index.html" class="link studio"
             >Web<span class="web">Studio</span></a
           >
-          <ul class="list">
-            <li><a href="./index.html" class="link site-nav">Studio</a></li>
-            <li>
+          <ul class="cont-nav list">
+            <li class="item">
+              <a href="./index.html" class="link site-nav">Studio</a>
+            </li>
+            <li class="item">
               <a href="./portfolio.html" class="link site-nav">Portfolio</a>
             </li>
-            <li><a href="" class="link site-nav">Contacts</a></li>
+            <li class="item">
+              <a href="" class="link site-nav">Contacts</a>
+            </li>
           </ul>
         </nav>
         <address class="font">
-          <ul class="list">
-            <li>
+          <ul class="adres list">
+            <li class="item">
               <a href="mailto:info@devstudio.com" class="mail-tel link"
                 >info@devstudio.com</a
               >
             </li>
-            <li>
+            <li class="item">
               <a href="tel:+110001111111" class="mail-tel link"
                 >+11 (000) 111-11-11</a
               >
             </li>
           </ul>
         </address>
-      </header>
-      <!-- filters -->
-      <main>
-        <section>
+      </div>
+    </header>
+    <!-- filters -->
+    <main>
+      <section>
+        <div class="container">
           <h1 hidden>Buttons</h1>
-          <ul class="list">
-            <li>
+          <ul class="buttons list">
+            <li class="buttons-li">
               <button type="button" class="filters">All</button>
             </li>
-            <li>
+            <li class="buttons-li">
               <button type="button" class="filters">Web Site</button>
             </li>
-            <li>
+            <li class="buttons-li">
               <button type="button" class="filters">App</button>
             </li>
-            <li>
+            <li class="buttons-li">
               <button type="button" class="filters">Design</button>
             </li>
-            <li>
+            <li class="buttons-li">
               <button type="button" class="filters">Marketing</button>
             </li>
           </ul>
 
           <!-- блок з картинками row-->
-          <ul class="list">
-            <li>
+          <ul class="portfolio-cards list">
+            <li class="cards-li">
               <a href="" class="link">
                 <img src="./images/11.jpg" alt="app" width="360" />
                 <h2 class="row-h">Banking App Interface Concept</h2>
                 <p class="row-p">App</p>
               </a>
             </li>
-            <li>
+            <li class="cards-li">
               <a href="" class="link">
                 <img
                   src="./images/22.jpg"
@@ -91,14 +97,14 @@
                 <p class="row-p">Marketing</p></a
               >
             </li>
-            <li>
+            <li class="cards-li">
               <a href="" class="link">
                 <img src="./images/33.jpg" alt="laptop" width="360" />
                 <h2 class="row-h">Meditation App</h2>
                 <p class="row-p">App</p></a
               >
             </li>
-            <li>
+            <li class="cards-li">
               <a href="" class="link">
                 <img
                   src="./images/44.jpg"
@@ -109,14 +115,14 @@
                 <p class="row-p">Marketing</p>
               </a>
             </li>
-            <li>
+            <li class="cards-li">
               <a href="" class="link">
                 <img src="./images/55.jpg" alt="phone_wallpapers" width="360" />
                 <h2 class="row-h">Screen Illustrations</h2>
                 <p class="row-p">Design</p>
               </a>
             </li>
-            <li>
+            <li class="cards-li">
               <a href="" class="link">
                 <img
                   src="./images/66.jpg"
@@ -127,7 +133,7 @@
                 <p class="row-p">Marketing</p>
               </a>
             </li>
-            <li>
+            <li class="cards-li">
               <a href="" class="link">
                 <img
                   src="./images/77.jpg"
@@ -138,14 +144,14 @@
                 <p class="row-p">Design</p>
               </a>
             </li>
-            <li>
+            <li class="cards-li">
               <a href="" class="link">
                 <img src="./images/88.jpg" alt="go_to_the_shop" width="360" />
                 <h2 class="row-h">Organic Food</h2>
                 <p class="row-p">Web Site</p>
               </a>
             </li>
-            <li>
+            <li class="cards-li">
               <a href="" class="link">
                 <img src="./images/99.jpg" alt="a_cup_of_coffe" width="360" />
                 <h2 class="row-h">Fresh Coffee</h2>
@@ -153,18 +159,18 @@
               </a>
             </li>
           </ul>
-        </section>
-      </main>
-      <!-- Підвал(низ сторінки) -->
-      <footer class="underground">
-        <a href="./index.html" class="studio link"
-          >Web<span class="under">Studio</span></a
-        >
-        <p class="under">
-          Increase the flow of customers and sales for your business with
-          digital marketing & growth solutions.
-        </p>
-      </footer>
-    </div>
+        </div>
+      </section>
+    </main>
+    <!-- Підвал(низ сторінки) -->
+    <footer class="underground">
+      <a href="./index.html" class="studio link"
+        >Web<span class="under">Studio</span></a
+      >
+      <p class="under">
+        Increase the flow of customers and sales for your business with digital
+        marketing & growth solutions.
+      </p>
+    </footer>
   </body>
 </html>
