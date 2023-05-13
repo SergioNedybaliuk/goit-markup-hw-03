@@ -33,14 +33,31 @@ body {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-right: 76px;
 }
+
+.studio-footer {
+  color: var(--button-bg-color);
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-right: 76px;
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
 .web {
   color: var(--primary-color-tittle);
 }
 .link {
   text-decoration: none;
 }
-
+.border-header {
+  border-bottom: 1px solid #e7e9fc;
+}
 /* site-nav */
 .site-nav {
   display: block;
@@ -77,6 +94,7 @@ body {
 
 .sec-one {
   background-color: var(--primary-color-tittle);
+  padding: 188px 0;
 }
 /* фон под хедером */
 .head {
@@ -85,6 +103,8 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: #ffffff;
+  max-width: 496px;
+  margin: auto;
 }
 
 .features {
@@ -109,6 +129,10 @@ body {
   cursor: pointer;
   margin: 0 auto;
   display: block;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  border-radius: 4px;
 }
 .first-button:hover,
 .first-button:focus {
@@ -122,6 +146,7 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--primary-color-tittle);
+  margin-bottom: 8px;
 }
 .sec-p {
   font-size: 16px;
@@ -151,6 +176,7 @@ body {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--primary-color-tittle);
+  margin-bottom: 72px;
 }
 
 /* section 4 */
@@ -164,6 +190,7 @@ body {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--primary-color-tittle);
+  margin-bottom: 72px;
 }
 .secfour-li {
   background-color: #ffffff;
@@ -176,6 +203,7 @@ body {
 /* Underground */
 .underground {
   background-color: var(--primary-color-tittle);
+  padding: 100px 0;
 }
 .under {
   color: #f4f4fd;
@@ -192,14 +220,25 @@ body {
   background-color: var(--filter-bg-color);
   text-decoration: none;
   cursor: pointer;
+  padding: 12px 24px;
+  border: 1px solid var(--filter-first-color);
+  border-radius: 4px;
 }
 .filters:hover,
 .filters:focus {
   color: #ffffff;
   background-color: #404bbf;
+  border: 1px solid transparent;
 }
 
 /* !-- блок з картинками --> */
+.block {
+  display: block;
+}
+
+.secpage-two {
+  padding: 96px 0 120px;
+}
 .one {
   box-sizing: border-box;
   position: absolute;
@@ -210,6 +249,7 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--primary-color-tittle);
+  margin-bottom: 8px;
 }
 .row-p {
   font-size: 16px;
@@ -222,9 +262,10 @@ body {
 .cont-nav {
   display: flex;
   margin-left: 76px;
+  gap: 40px;
 }
 .item {
-  margin-right: 40px;
+  gap: 40px;
 }
 .cont-nav .item:last-child {
   margin-right: 0;
@@ -258,24 +299,40 @@ body {
 .section {
   margin-bottom: 120px;
 }
+.section-padding {
+  padding: 120px 0;
+}
 /* Section-2 What are we doing */
 .card-work {
   display: flex;
   margin: 0;
   padding: 0;
 }
+
+.work {
+  flex-basis: calc((100% - 48px) / 3);
+}
+
 .work:not(:last-child) {
   margin-right: 24px;
 }
-/* section-3  */
+
+/* section-4  */
 .team {
   display: flex;
   margin: 0;
   padding: 0;
 }
+
 .team-li {
-  flex-basis: calc(100 / 4);
+  flex-basis: calc((100% - 72px) / 4);
+  border-radius: 0px 0px 4px 4px;
 }
+
+.team-text {
+  padding: 32px 16px;
+}
+
 .team-li:not(:last-child) {
   margin-right: 24px;
 }
@@ -296,13 +353,20 @@ body {
   margin: 0;
   padding: 0;
   justify-content: center;
+  row-gap: 48px;
 }
 .cards-li:nth-child(3n + 3) {
   margin-right: 0;
+  padding-right: 0;
 }
 .cards-li {
-  margin-right: 24px;
-  margin-bottom: 48px;
+  width: calc((100% - 48px) / 3)
   background-color: var(--cornflower-bg);
-  border: 1px solid #e7e9fc;
+  border: 1px solid var(--filter-first-color: #e7e9fc);
+}
+
+.cards-info {
+  padding: 32px 16px;
+  border: 1px solid var(--filter-first-color);
+  border-top: none;
 }
