@@ -235,7 +235,6 @@ body {
 /* !-- блок з картинками --> */
 .block {
   display: block;
-  background-size: cover;
 }
 
 .secpage-two {
@@ -369,7 +368,6 @@ body {
 .cards-li {
   width: calc((100% - 48px) / 3);
   background-color: var(--cornflower-bg);
-  border: 1px solid var(--filter-first-color: #e7e9fc);
 }
 
 .cards-info {
