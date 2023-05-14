@@ -161,6 +161,7 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--primary-color-tittle);
+  margin-bottom: 8px;
 }
 .sec-p-two {
   font-size: 16px;
@@ -234,6 +235,7 @@ body {
 /* !-- блок з картинками --> */
 .block {
   display: block;
+  background-size: cover;
 }
 
 .secpage-two {
@@ -273,6 +275,7 @@ body {
 .adres {
   display: flex;
   margin-right: auto;
+  gap: 40px;
 }
 .adres .item + .item {
   margin-left: 40px;
@@ -291,6 +294,9 @@ body {
   display: flex;
   margin: 0;
   padding: 0;
+}
+.cards-features {
+  width: calc((100% - 72px) / 4);
 }
 
 .cards-features:not(:last-child) {
@@ -354,13 +360,14 @@ body {
   padding: 0;
   justify-content: center;
   row-gap: 48px;
+  column-gap: 24px;
 }
 .cards-li:nth-child(3n + 3) {
   margin-right: 0;
   padding-right: 0;
 }
 .cards-li {
-  width: calc((100% - 48px) / 3)
+  width: calc((100% - 48px) / 3);
   background-color: var(--cornflower-bg);
   border: 1px solid var(--filter-first-color: #e7e9fc);
 }
