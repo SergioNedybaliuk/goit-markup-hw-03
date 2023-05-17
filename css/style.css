@@ -13,6 +13,22 @@ body {
   color: var(--secondary-color-tittle);
   background-color: var(--primary-whte-color);
 }
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
 .list {
   list-style: none;
 }
@@ -58,8 +74,6 @@ body {
 }
 .border-header {
   border-bottom: 1px solid var(--filter-first-color);
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 /* site-nav */
 .site-nav {
@@ -69,6 +83,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--primary-color-tittle);
+  padding: 24px 0;
 }
 
 .site-nav.link:hover,
@@ -85,18 +100,31 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--secondary-color-tittle);
+  padding: 24px 0;
 }
 .mail-tel:hover,
 .mail-tel:focus {
   color: var(--filter-color);
 }
 
-/* секция с описанием */
+/* відступ у секціях*/
 
-.sec-one {
+.section {
   background-color: var(--primary-color-tittle);
   padding: 188px 0;
 }
+.sec-one {
+  padding-bottom: 120px;
+}
+.section-padding {
+  padding: 120px 0;
+}
+
+.sec-fon {
+  background: var(--filter-bg-color);
+  padding: 120px 0;
+}
+
 /* фон под хедером */
 .head {
   font-size: 56px;
@@ -195,7 +223,6 @@ body {
   color: var(--primary-color-tittle);
   margin-bottom: 72px;
   background-color: var(--filter-bg-color);
-  padding-top: 120px;
   margin-top: 0;
 }
 .secfour-li {
@@ -205,7 +232,6 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--primary-color-tittle);
-  margin-bottom: 120px;
 }
 /* Underground */
 .underground {
@@ -273,7 +299,6 @@ body {
   display: flex;
   margin-left: 76px;
   gap: 40px;
-  padding: 24px 0;
 }
 .item {
   gap: 40px;
@@ -286,6 +311,7 @@ body {
   margin-right: auto;
   gap: 40px;
 }
+
 .adres .item + .item {
   margin-left: 40px;
 }
@@ -311,17 +337,7 @@ body {
 .cards-features:not(:last-child) {
   margin-right: 24px;
 }
-.section {
-  padding-bottom: 120px;
-}
-.section-padding {
-  padding: 120px 0;
-}
 
-.sec-fon {
-  background: var(--filter-bg-color);
-  padding: 120px 0;
-}
 /* Section-2 What are we doing */
 .card-work {
   display: flex;
