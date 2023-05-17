@@ -273,6 +273,7 @@ body {
   display: flex;
   margin-left: 76px;
   gap: 40px;
+  padding: 24px 0;
 }
 .item {
   gap: 40px;
@@ -319,6 +320,7 @@ body {
 
 .sec-fon {
   background: var(--filter-bg-color);
+  padding: 120px 0;
 }
 /* Section-2 What are we doing */
 .card-work {
